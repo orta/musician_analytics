@@ -3,7 +3,7 @@ require 'json'
 
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
-%w(lastfm myspace twitter google_analytics).each do |file|
+%w(lastfm myspace twitter ).each do |file|
   require "musician_analytics/#{file}"
 end
 
